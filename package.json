@@ -1,21 +1,34 @@
 {
   "name": "express-audit-logger",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A flexible audit logging middleware for Express applications",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "audit",
+    "logging",
+    "express",
+    "middleware",
+    "typescript"
+  ],
+  "author": "Sulaiman Olaosebikan",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "@types/node": "^16.11.7",
+    "jest": "^27.4.7",
+    "@types/jest": "^27.4.0"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "winston": "^3.17.0"
+    "express": "^4.21.2"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
   }
 }
