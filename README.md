@@ -5,15 +5,15 @@
 A flexible and powerful audit logging middleware for Express applications built with TypeScript. Track user actions, API activity, and system events with customizable storage providers and extensive configuration options.
 
 ## Features
-  🚀 Easy to integrate Express middleware
-  📝 Automatic HTTP request/response logging
-  🔒 Sensitive data masking
-  🎯 Path exclusion patterns
-  ⏱️ Response time tracking
-  🔌 Pluggable storage providers
-  📊 Detailed request metadata logging
-  🔄 Manual logging capability
-  💪 Written in TypeScript with full type support
+  - Easy to integrate Express middleware
+  - Automatic HTTP request/response logging
+  - Sensitive data masking
+  - Path exclusion patterns
+  - Response time tracking
+  - Pluggable storage providers
+  - Detailed request metadata logging
+  - Manual logging capability
+  - Written in TypeScript with full type support
 
 ## Installation
 ```sh
