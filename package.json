@@ -8,6 +8,10 @@
     "prepare": "npm run build",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horlabyc/express-audit-logger.git" 
+  },
   "keywords": [
     "audit",
     "logging",
