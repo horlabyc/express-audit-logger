@@ -1,4 +1,4 @@
-import { AuditLog, AuditStorageProvider } from "src/types";
+import { AuditLog, AuditStorageProvider } from "../types";
 
 export class ConsoleStorageProvider implements AuditStorageProvider {
   async save(log: AuditLog): Promise<void> {

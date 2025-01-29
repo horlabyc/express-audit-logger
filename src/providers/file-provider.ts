@@ -1,4 +1,4 @@
-import { AuditLog, AuditStorageProvider } from "src/types";
+import { AuditLog, AuditStorageProvider } from "../types";
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
