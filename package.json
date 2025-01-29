@@ -1,6 +1,6 @@
 {
   "name": "express-audit-logger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A flexible audit logging middleware for Express applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
