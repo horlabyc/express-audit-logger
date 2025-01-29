@@ -202,28 +202,7 @@ Basic express app setup
 ```
 
 ##### With Database Storage
-You can create a custom storage provider (e.g for MongoDB or PostgresQL) by implementing the `AuditStorageProvider` interface
-```ts
-    import { AuditLog, AuditStorageProvider } from 'express-audit-logger';
-    import { MongoClient } from 'mongodb';
-    
-    export class MongoStorageProvider implements AuditStorageProvider {
-      private client: MongoClient;
-      private collection: string;
-    
-      constructor(client: MongoClient, collection: string) {
-        this.client = client;
-        this.collection = collection;
-      }
-    
-      async save(log: AuditLog): Promise<void> {
-        await this.client
-          .db()
-          .collection(this.collection)
-          .insertOne(log);
-      }
-    }
-```
+You can create use your custom custom storage provider (e.g for MongoDB or PostgresQL)
 
 ```ts
     import { AuditLogger } from 'express-audit-logger';
