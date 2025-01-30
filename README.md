@@ -155,21 +155,15 @@ Each audit log entry contains the following information:
 ```
 
 ##### Manual Logging
-Each audit log entry contains the following information:
+In addition to automatic request logging, you can manually create log entries:
 
 ```ts
-    interface AuditLog {
-      timestamp: Date;
-      userId?: string;
-      action: string;
-      resource: string;
-      details: Record<string, any>;
-      ip?: string;
-      userAgent?: string;
-      status?: number;
-      method?: string;
-      path?: string;
-    }
+    // Inside an async route handler or middleware
+    await auditLogger.log('USER_LOGIN', {
+      userId: '123',
+      email: 'user@example.com',
+      loginMethod: 'oauth'
+    });
 ```
 
 ##### Error Handling
@@ -227,10 +221,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes (git commit -m 'Add some AmazingFeature')
 4. Push to the branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
-  
-## License
-
-[MIT](LICENSE)
 
 [ci-image]: https://badgen.net/github/checks/expressjs/body-parser/master?label=ci
 [ci-url]: https://github.com/expressjs/body-parser/actions/workflows/ci.yml
